@@ -1,5 +1,5 @@
-export interface IApiResponse<T> {
+export interface IApiResponse<PayloadType> {
   status: number;
   error?: string;
-  payload: T;
+  payload: PayloadType | Record<string, never>;
 }

@@ -8,3 +8,6 @@ export interface IUser {
 }
 
 export type UserCreate = Pick<IUser, 'name' | 'email' | 'password'>;
+export type UserLogin = Pick<IUser, 'email' | 'password'>;
+export type LoginToken = string;
+export type UserPublic = Pick<IUser, '_id' | 'name' | 'email'>;
