@@ -1,18 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Message } from '@todoist/api-interfaces';
-
 export const App = () => {
-  const [m, setMessage] = useState<Message>({ message: '' });
-
-  useEffect(() => {
-    fetch('/api')
-      .then((r) => r.json())
-      .then(setMessage);
-  }, []);
-
   return (
-    <>
-      <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' }}>
         <h1>Welcome to web!</h1>
         <img
           width="450"
@@ -20,8 +8,6 @@ export const App = () => {
           alt="Nx - Smart, Fast and Extensible Build System"
         />
       </div>
-      <div>{m.message}</div>
-    </>
   );
 };
 
