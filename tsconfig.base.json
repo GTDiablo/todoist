@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@todoist/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@todoist/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@todoist/core": ["libs/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
